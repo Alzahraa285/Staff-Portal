@@ -1,21 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Staff Portal - Home</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Importing Font -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" />
-        <!-- Importing Vendor Styles (UIKIT) -->
-        <link rel="stylesheet" href="vendors/css/uikit.min.css"/>
-        <!-- Importing Resources Styles -->
-        <link rel="stylesheet" href="resources/css/style.css" />
-    </head>
-    <body>
-        <!-- Importing Vendor Scripts (UIKIT) -->
-        <script src="vendors/js/uikit.min.js"></script>
-        <script src="vendors/js/uikit-icons.min.js"></script>
-        <!-- Importing Resources Scripts -->
-        <script src="resources/js/script.js"></script>
-    </body>
+
+<head>
+    <title>Staff Portal - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importing Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" />
+    <!-- Importing Vendor Styles (UIKIT) -->
+    <link rel="stylesheet" href="vendors/css/uikit.min.css" />
+    <!-- Importing Resources Styles -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container portal-navbar" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <div class="logo">
+                    <img src="imgs/AswanUni.png" alt="">
+                    <span class="logo-text">Stuff Portal</span>
+                </div>
+            </div>
+            <!-- Start Menu for Medium and Large Devices -->
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active">
+                        <a href="#">
+                            <i uk-icon="icon: home; ratio: 0.8;"></i>&nbsp;
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i uk-icon="icon: thumbnails; ratio: 0.8;"></i>&nbsp;
+                            Staff Portal
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i uk-icon="icon: sign-in; ratio: 0.8;"></i>&nbsp;
+                            Sign In
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i uk-icon="icon: world; ratio: 0.8;"></i>&nbsp;
+                            Lang
+                        </a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">EN</a></li>
+                                <li><a href="#">AR</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <nav class="uk-navbar uk-navbar-container">
+                    <div class="uk-navbar-left">
+                        <button class="uk-navbar-toggle" uk-navbar-toggle-icon
+                            uk-toggle="target: #offcanvas-overlay"></button>
+                    </div>
+                    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                        <div class="uk-offcanvas-bar">
+                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+                            <ul class="uk-navbar-nav sidemenu">
+                                <li class="uk-active">
+                                    <a href="#">
+                                        <i uk-icon="icon: home; ratio: 0.8;"></i>&nbsp;
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i uk-icon="icon: thumbnails; ratio: 0.8;"></i>&nbsp;
+                                        Staff Portal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i uk-icon="icon: sign-in; ratio: 0.8;"></i>&nbsp;
+                                        Sign In
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i uk-icon="icon: world; ratio: 0.8;"></i>&nbsp;
+                                        Lang
+                                    </a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">EN</a></li>
+                                            <li><a href="#">AR</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                </nav>
+            </div>
+            <!-- End Menu for Medium and Large Devices -->
+        </nav>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Hero Slider -->
+    <div class="hero-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+        uk-slideshow="min-height: 300; max-height: 450; animation: push">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <div class="caption">
+                    <p class="uk-margin-remove">
+                        Slide 1 Caption
+                    </p>
+                </div>
+                <img src="imgs/s1.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <div class="caption">
+                    <p class="uk-margin-remove">
+                        Slide 2 Caption
+                    </p>
+                </div>
+                <img src="imgs/s2.png" alt="" uk-cover>
+            </li>
+            <li>
+                <div class="caption">
+                    <p class="uk-margin-remove">
+                        Slide 3 Caption
+                    </p>
+                </div>
+                <img src="imgs/s3.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slideshow-item="next"></a>
+
+    </div>
+    <!-- End Hero Slider -->
+
+    <!-- Start Senior Admins -->
+    <div class="senior-admins">
+        <h2 class="title">Seniors of <span>Aswan University</span></h2>
+    </div>
+    <!-- End Senior Admins -->
+
+    <!-- Importing Vendor Scripts (UIKIT) -->
+    <script src="vendors/js/uikit.min.js"></script>
+    <script src="vendors/js/uikit-icons.min.js"></script>
+    <!-- Importing Resources Scripts -->
+    <script src="resources/js/script.js"></script>
+</body>
+
 </html>

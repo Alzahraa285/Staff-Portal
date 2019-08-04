@@ -1,0 +1,102 @@
+@import "../../vendors/scss/index.scss";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* Start Navbar Styling */ 
+.portal-navbar {
+    box-shadow: 0 1px 10px -5px;
+    padding: 0 25px;
+    .logo {
+        img {
+            width: 60px;
+            border-right: 1px solid #999;
+            padding-right: 10px;
+        }
+        .logo-text {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    }
+    .uk-navbar-right {
+        .uk-navbar-nav {
+            @include respond-below(md) {
+                display: none;
+            }
+            .uk-active {
+                border-bottom: 2px solid $color-primary-light;
+            }
+            li {
+                border-bottom: 0;
+                &:hover {
+                    border-bottom: 2px solid $color-primary-light;
+                    transition: border 0.1s ease-in;
+                }
+            }
+            .uk-navbar-dropdown {
+                ul {
+                    .uk-active {
+                        border: 0;
+                        
+                    }
+                    li {
+                        border-bottom: 0;
+                        &:hover {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .uk-navbar {
+            @include respond-above(md) {
+                display: none;
+            }
+        }
+        .uk-navbar-nav.sidemenu {
+            clear: both;
+            display: block;
+            &>li>a {
+                justify-content: left;
+            }
+        }
+    }
+}
+/* End Navbar Styling */ 
+/* Start Slider Styling */ 
+.hero-slider {
+    .uk-slideshow-items {
+        position: relative;
+        li {
+            .caption {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                z-index: 10;
+                padding: 7px 10px;
+                display: block;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.8);
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* End Slide Styling */ 
+
+/* Start Senior Admins Styling */ 
+.senior-admins {
+    background: $color-primary-dark;
+    // height: 300px;
+    padding: 15px 0;
+    .title {
+        text-align: center;
+        font-weight: 600;
+        span {
+            color: $color-primary-light;
+        }
+    }
+}
+/* End Senior Admins Styling */ 

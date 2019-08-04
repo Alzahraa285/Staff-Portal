@@ -1,0 +1,110 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Start Navbar Styling */
+.portal-navbar {
+  -webkit-box-shadow: 0 1px 10px -5px;
+          box-shadow: 0 1px 10px -5px;
+  padding: 0 25px;
+}
+
+.portal-navbar .logo img {
+  width: 60px;
+  border-right: 1px solid #999;
+  padding-right: 10px;
+}
+
+.portal-navbar .logo .logo-text {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+@media (max-width: 991px) {
+  .portal-navbar .uk-navbar-right .uk-navbar-nav {
+    display: none;
+  }
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav .uk-active {
+  border-bottom: 2px solid #569FD7;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav li {
+  border-bottom: 0;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav li:hover {
+  border-bottom: 2px solid #569FD7;
+  -webkit-transition: border 0.1s ease-in;
+  transition: border 0.1s ease-in;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav .uk-navbar-dropdown ul .uk-active {
+  border: 0;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav .uk-navbar-dropdown ul li {
+  border-bottom: 0;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav .uk-navbar-dropdown ul li:hover {
+  border-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .portal-navbar .uk-navbar-right .uk-navbar {
+    display: none;
+  }
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav.sidemenu {
+  clear: both;
+  display: block;
+}
+
+.portal-navbar .uk-navbar-right .uk-navbar-nav.sidemenu > li > a {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+/* End Navbar Styling */
+/* Start Slider Styling */
+.hero-slider .uk-slideshow-items {
+  position: relative;
+}
+
+.hero-slider .uk-slideshow-items li .caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  padding: 7px 10px;
+  display: block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-slider .uk-slideshow-items li .caption p {
+  text-align: center;
+}
+
+/* End Slide Styling */
+/* Start Senior Admins Styling */
+.senior-admins {
+  background: #EDEDED;
+  padding: 15px 0;
+}
+
+.senior-admins .title {
+  text-align: center;
+  font-weight: 600;
+}
+
+.senior-admins .title span {
+  color: #569FD7;
+}
+
+/* End Senior Admins Styling */
+/*# sourceMappingURL=style.css.map */
