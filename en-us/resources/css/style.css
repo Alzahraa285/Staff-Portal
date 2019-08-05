@@ -195,8 +195,8 @@ body {
   margin-right: 7px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .modal-links a img:hover {
@@ -205,4 +205,36 @@ body {
 }
 
 /* End Senior Admins Styling */
+/* Start Statistics Styling */
+.stats {
+  padding: 15px 20px;
+}
+
+.stats .title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .stats .title {
+    margin-bottom: 15px;
+  }
+}
+
+.stats .title span {
+  color: #569FD7;
+}
+
+.stats .stat .count {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.stats .stat .stat-title {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+/* Start Statistics Styling */
 /*# sourceMappingURL=style.css.map */

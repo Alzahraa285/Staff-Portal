@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="resources/css/style.css" />
 </head>
 
-<body>
+<body onload="countUp()">
     <!-- Start Navbar -->
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
         <nav class="uk-navbar-container portal-navbar" uk-navbar style="position: relative; z-index: 980;">
@@ -105,6 +105,7 @@
         </nav>
     </div>
     <!-- End Navbar -->
+
     <!-- Start Hero Slider -->
     <div class="hero-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
         uk-slideshow="min-height: 300; max-height: 450; animation: push">
@@ -344,11 +345,82 @@
     </div>
     <!-- End Senior Admins -->
 
+    <!-- Start Stats-->
+    <div class="stats">
+        <h2 class="title">Some Important&nbsp;<span>Statistics</span></h2>
+        <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
+            <div class="stat">
+                <img src="imgs/icons/professor.png" alt="">
+                <h3 id="prof-count" class="count" data-count="1325">
+                    0
+                </h3>
+                <h3 class="stat-title">Professors</h3>
+            </div>
+            <div class="stat">
+                <img src="imgs/icons/graduate.png" alt="">
+                <h3 id="grad-count" class="count" data-count="4639">
+                    0
+                </h3>
+                <h3 class="stat-title">Graduates</h3>
+            </div>
+            <div class="stat">
+                <img src="imgs/icons/student.png" alt="">
+                <h3 id="student-count" class="count" data-count="25922">
+                    0
+                </h3>
+                <h3 class="stat-title">Students</h3>
+            </div>
+            <div class="stat">
+                <img src="imgs/icons/clerk.png" alt="">
+                <h3 id="clerk-count" class="count" data-count="1781">
+                    0
+                </h3>
+                <h3 class="stat-title">Clerks</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Start Stats-->
+
     <!-- Importing Vendor Scripts (UIKIT) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="vendors/js/uikit.min.js"></script>
     <script src="vendors/js/uikit-icons.min.js"></script>
     <!-- Importing Resources Scripts -->
     <script src="resources/js/script.js"></script>
+    <script>
+        function countUp() {
+            animateValue("prof-count");
+            animateValue("grad-count");
+            animateValue("student-count");
+            animateValue("clerk-count");
+        }
+
+        function animateValue(id) {
+            $(`#${id}`).each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({ countNum: $this.text() }).animate({
+                    countNum: countTo
+                },
+
+                    {
+
+                        duration: 8000,
+                        easing: 'linear',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        }
+
+                    });
+
+
+
+            });
+        }
+    </script>
 </body>
 
 </html>

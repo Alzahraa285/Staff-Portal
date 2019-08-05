@@ -95,7 +95,7 @@ body {
     font-weight: 600;
     margin-bottom: 50px;
     @include respond-below(md) {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
     span {
       color: $color-primary-light;
@@ -148,40 +148,67 @@ body {
 }
 // Modal Styles
 .uk-modal-dialog {
-    width: 700px;
+  width: 700px;
 }
 .basic {
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 .senior-info {
-    .item {
-        font-weight: 700;
-        font-size: 14px;
-        color: $color-primary-light;
-        display: block;
-        margin-bottom: 10px;
-        span {
-            font-weight: 400;
-            color: #000;
-        }
+  .item {
+    font-weight: 700;
+    font-size: 14px;
+    color: $color-primary-light;
+    display: block;
+    margin-bottom: 10px;
+    span {
+      font-weight: 400;
+      color: #000;
     }
+  }
 }
 .modal-links {
-    a {
-        text-decoration: none;
-        float: right;
-        img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 7px;
-            filter: grayscale(100%);
-            transition: .5s ease;
-            &:hover {
-                filter: grayscale(0%)
-            }
-        }
+  a {
+    text-decoration: none;
+    float: right;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 7px;
+      filter: grayscale(100%);
+      transition: 0.5s ease;
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
+  }
 }
 /* End Senior Admins Styling */
+
+/* Start Statistics Styling */
+.stats {
+  padding: 15px 20px;
+  .title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    @include respond-below(md) {
+      margin-bottom: 15px;
+    }
+    span {
+      color: $color-primary-light;
+    }
+  }
+  .stat {
+      .count {
+          margin-top: 15px;
+          margin-bottom: 0;
+      }
+      .stat-title {
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
+  }
+}
+/* Start Statistics Styling */
