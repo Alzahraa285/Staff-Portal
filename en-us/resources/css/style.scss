@@ -204,6 +204,8 @@ body {
       .count {
           margin-top: 15px;
           margin-bottom: 0;
+          font-weight: 700;
+          color: $color-primary-light;
       }
       .stat-title {
         margin-top: 0px;
@@ -212,3 +214,24 @@ body {
   }
 }
 /* Start Statistics Styling */
+
+/* Start Academic Staff */
+.academic-staff {
+    form {
+        padding: 0 70px;
+        @include respond-below(md){
+            padding: 0 15px;
+        }
+    }
+}
+/* End Academic Staff */
+
+/* Start Footer */
+.footer {
+    span {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+}
+/* End Footer */

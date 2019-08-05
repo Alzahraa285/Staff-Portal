@@ -229,6 +229,8 @@ body {
 .stats .stat .count {
   margin-top: 15px;
   margin-bottom: 0;
+  font-weight: 700;
+  color: #569FD7;
 }
 
 .stats .stat .stat-title {
@@ -237,4 +239,24 @@ body {
 }
 
 /* Start Statistics Styling */
+/* Start Academic Staff */
+.academic-staff form {
+  padding: 0 70px;
+}
+
+@media (max-width: 991px) {
+  .academic-staff form {
+    padding: 0 15px;
+  }
+}
+
+/* End Academic Staff */
+/* Start Footer */
+.footer span {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+/* End Footer */
 /*# sourceMappingURL=style.css.map */
