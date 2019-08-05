@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Start Navbar Styling */
@@ -94,16 +94,114 @@ body {
 /* Start Senior Admins Styling */
 .senior-admins {
   background: #EDEDED;
-  padding: 15px 0;
+  padding: 15px 20px;
 }
 
 .senior-admins .title {
   text-align: center;
   font-weight: 600;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .senior-admins .title {
+    margin-bottom: 15px;
+  }
 }
 
 .senior-admins .title span {
   color: #569FD7;
+}
+
+.senior-admins .senior .image-container {
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.senior-admins .senior .image-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.senior-admins .senior .image-container .show-profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.senior-admins .senior .image-container .show-profile .show-btn {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.senior-admins .senior .image-container:hover .show-profile {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.senior-admins .senior .senior-name {
+  font-weight: 700;
+  color: #569FD7;
+}
+
+.senior-admins .senior .title {
+  font-size: 14px;
+}
+
+.uk-modal-dialog {
+  width: 700px;
+}
+
+.basic {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.senior-info .item {
+  font-weight: 700;
+  font-size: 14px;
+  color: #569FD7;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.senior-info .item span {
+  font-weight: 400;
+  color: #000;
+}
+
+.modal-links a {
+  text-decoration: none;
+  float: right;
+}
+
+.modal-links a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.modal-links a img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 /* End Senior Admins Styling */
