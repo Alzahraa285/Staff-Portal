@@ -20,6 +20,30 @@ body {
   margin-left: 5px;
 }
 
+.portal-navbar .uk-offcanvas-bar.profile {
+  background-color: #fff;
+}
+
+.portal-navbar .uk-offcanvas-bar.profile .uk-offcanvas-close {
+  color: #000;
+}
+
+.portal-navbar .uk-offcanvas-bar h2 {
+  color: #000;
+}
+
+.portal-navbar .uk-offcanvas-bar .image {
+  margin-bottom: 20px;
+}
+
+.portal-navbar .uk-offcanvas-bar .image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
   .portal-navbar .uk-navbar-right .uk-navbar-nav {
     display: none;
@@ -165,6 +189,10 @@ body {
   width: 700px;
 }
 
+.uk-modal-dialog.sign-in {
+  width: 500px;
+}
+
 .basic {
   font-weight: 700;
   margin-bottom: 15px;
@@ -207,6 +235,7 @@ body {
 /* End Senior Admins Styling */
 /* Start Statistics Styling */
 .stats {
+  background: #EDEDED;
   padding: 15px 20px;
 }
 
@@ -240,6 +269,10 @@ body {
 
 /* Start Statistics Styling */
 /* Start Academic Staff */
+.academic-staff {
+  background: #fff;
+}
+
 .academic-staff form {
   padding: 0 70px;
 }

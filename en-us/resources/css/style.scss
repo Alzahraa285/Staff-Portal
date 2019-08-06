@@ -18,6 +18,27 @@ body {
       margin-left: 5px;
     }
   }
+  .uk-offcanvas-bar {
+    &.profile {
+      background-color: #fff;
+      .uk-offcanvas-close {
+        color: #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+    .image {
+      margin-bottom: 20px;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
   .uk-navbar-right {
     .uk-navbar-nav {
       @include respond-below(md) {
@@ -150,6 +171,12 @@ body {
 .uk-modal-dialog {
   width: 700px;
 }
+
+.uk-modal-dialog {
+  &.sign-in {
+    width: 500px;
+  }
+}
 .basic {
   font-weight: 700;
   margin-bottom: 15px;
@@ -188,6 +215,7 @@ body {
 
 /* Start Statistics Styling */
 .stats {
+  background: $color-primary-dark;
   padding: 15px 20px;
   .title {
     text-align: center;
@@ -201,37 +229,38 @@ body {
     }
   }
   .stat {
-      .count {
-          margin-top: 15px;
-          margin-bottom: 0;
-          font-weight: 700;
-          color: $color-primary-light;
-      }
-      .stat-title {
-        margin-top: 0px;
-        margin-bottom: 0;
-      }
+    .count {
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-weight: 700;
+      color: $color-primary-light;
+    }
+    .stat-title {
+      margin-top: 0px;
+      margin-bottom: 0;
+    }
   }
 }
 /* Start Statistics Styling */
 
 /* Start Academic Staff */
 .academic-staff {
-    form {
-        padding: 0 70px;
-        @include respond-below(md){
-            padding: 0 15px;
-        }
+  background: #fff;
+  form {
+    padding: 0 70px;
+    @include respond-below(md) {
+      padding: 0 15px;
     }
+  }
 }
 /* End Academic Staff */
 
 /* Start Footer */
 .footer {
-    span {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
+  span {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
 }
 /* End Footer */
